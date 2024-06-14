@@ -1,0 +1,58 @@
+.weatherinfo {
+    background-color: #ccca;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 550px;
+    min-height: 70vh;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.weatherinfo-title {
+    text-transform: capitalize;
+}
+.weatherinfo-body {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 0 20px;
+}
+.weatherinfo-Info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+.weatherinfo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.weatherinfo-item {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 10px;
+}
+.weatherinfo-item span:first-child {
+    text-transform: capitalize;
+}
+.weatherinfo-item span:last-child {
+    font-weight: 900;
+}
+.weatherinfo-temp {
+    margin: 15px 0;
+}
+.weatherinfo-btn {
+    padding: 10px 20px;
+    transition: transform .25s,
+                box-shadow .25s;
+}
+.weatherinfo-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px;
+    transition: transform .25s,
+                box-shadow .25s;
+}
